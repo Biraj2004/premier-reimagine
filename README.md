@@ -28,7 +28,7 @@
 
 ## Demo
 
-To see a live demo, visit: [Live Demo Link](#)
+To see a live demo, visit: [[Live Demo Link](https://biraj2004.github.io/premier-reimagine/)](#)
 
 ## Setup
 
