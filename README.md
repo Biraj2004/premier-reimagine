@@ -28,7 +28,10 @@
 
 ## Demo
 
-To see a live demo, visit: [[Live Demo Link](https://biraj2004.github.io/premier-reimagine/)](#)
+To see a live demo, visit: [Live Demo Link](https://biraj2004.github.io/premier-reimagine/)
+
+![image](https://github.com/user-attachments/assets/6f580c85-c7e7-40ca-be61-b15b49e01249)
+
 
 ## Setup
 
@@ -41,7 +44,7 @@ No additional setup is required as the project uses only HTML and CSS.
 - **Homepage**: View featured shoots and the latest content.
 - **Model Portfolio**: Explore the profiles of various models.
 - **Blogs**: Read articles on fashion and industry insights.
-- **Responsive Navigation**: Seamlessly switch between pages on any device.
+- **Basic Responsiveness**: Seamless navigation of pages on any device.
 
 ---
 
