@@ -28,7 +28,6 @@ html, body {
     justify-content: space-between;
     border-top: 3px solid black;
     border-bottom: 3px solid black;
-
 }
 
 #nav h1 {
@@ -55,7 +54,7 @@ html, body {
     display: flex;
     align-items: center;
     justify-content: center;
-    border-right: 3px solid black; /* Default border for all links */
+    border-right: 3px solid black;
     font-size: 23px;
     text-align: center;
     font-weight: 600;
@@ -71,9 +70,8 @@ html, body {
 #nav a:nth-last-child(1) {
     width: 15%;
     background-color: #F8F8F8;
-    border-right: none; /* Remove the border for the last link */
+    border-right: none;
 }
-
 
 #nav a:nth-last-child(1):hover {
     background-color: rgb(230, 230, 230);
@@ -106,7 +104,6 @@ html, body {
     position: absolute;
     bottom: 0;
     padding: 0vw 3vw;
-
 }
 
 #over1 {
@@ -165,7 +162,7 @@ html, body {
     overflow-y: hidden;
 }
 
-#container1 {
+#container1, #container2 {
     height: 100%;
     width: 100%;
     display: inline-block;
@@ -176,27 +173,7 @@ html, body {
     animation-duration: 20s;
 }
 
-#container2 {
-    height: 100%;
-    width: 100%;
-    display: inline-block;
-    background-color: #F8F8F8;
-    animation-name: anime;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    animation-duration: 20s;
-}
-
-#container1 img {
-    height: 90%;
-    width: 10%;
-    border-radius: 50%;
-    object-fit: cover;
-    object-position: 25% 25%;
-    margin: 0.4vw;
-}
-
-#container2 img {
+#container1 img, #container2 img {
     height: 90%;
     width: 10%;
     border-radius: 50%;
@@ -206,13 +183,12 @@ html, body {
 }
 
 @keyframes anime {
-    from{
+    from {
         transform: translateX(0);
     }
-    to{
+    to {
         transform: translateX(-100%);
     }
-    
 }
 
 #alphabet {
@@ -233,7 +209,6 @@ html, body {
     justify-content: center;
     border-bottom: 2px solid black;
     border-top: 2px solid black;
-
 }
 
 #text h5 {
@@ -264,5 +239,147 @@ html, body {
 
 #text h6:hover {
     border: 2px solid rgb(0, 0, 0);
+}
 
+
+/* Media Queries for Responsiveness */
+
+@media screen and (max-width: 1024px) {
+    #nav h1 {
+        font-size: 40px;
+    }
+
+    #nav a {
+        font-size: 18px;
+    }
+
+    #over1 h1 {
+        font-size: 5vw;
+    }
+
+    #over1 h2 {
+        font-size: 1.5vw;
+        padding: 1.5vw 1.5vw;
+    }
+
+    #over2 h4 {
+        font-size: 1.5vw;
+    }
+
+    #text h5 {
+        font-size: 2.5vw;
+    }
+
+    #text h6 {
+        font-size: 1.5vw;
+        padding: 0.7vw 1vw;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #nav {
+        flex-wrap: wrap;
+        height: auto;
+    }
+
+    #nav h1 {
+        width: 100%;
+        border-right: none;
+        border-bottom: 3px solid black;
+    }
+
+    #nav a {
+        width: 50%;
+        border-right: none;
+        border-bottom: 3px solid black;
+    }
+
+    #nav a:nth-last-child(2) {
+        width: 50%;
+    }
+
+    #nav a:nth-last-child(1) {
+        width: 100%;
+        border-bottom: none;
+    }
+
+    #center {
+        height: 70%;
+    }
+
+    #over1 h1 {
+        font-size: 6vw;
+    }
+
+    #over1 h2 {
+        font-size: 2vw;
+        padding: 2vw 2vw;
+    }
+
+    #over2 h4 {
+        font-size: 2vw;
+    }
+
+    #container1 img, #container2 img {
+        width: 20%;
+    }
+
+    #text {
+        flex-wrap: wrap;
+        height: auto;
+        padding: 2vw 0;
+    }
+
+    #text h5 {
+        width: 100%;
+        text-align: center;
+        margin-right: 0;
+        margin-bottom: 2vw;
+    }
+
+    #text h6 {
+        font-size: 2vw;
+        padding: 1vw 1.5vw;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #nav h1 {
+        font-size: 30px;
+    }
+
+    #nav a {
+        font-size: 16px;
+        width: 100%;
+    }
+
+    #nav a:nth-last-child(2) {
+        width: 100%;
+    }
+
+    #over1 h1 {
+        font-size: 8vw;
+    }
+
+    #over1 h2 {
+        font-size: 3vw;
+        padding: 3vw 3vw;
+    }
+
+    #over2 h4 {
+        font-size: 3vw;
+    }
+
+    #container1 img, #container2 img {
+        width: 30%;
+    }
+
+    #text h5 {
+        font-size: 4vw;
+    }
+
+    #text h6 {
+        font-size: 3vw;
+        padding: 1.5vw 2vw;
+    }
 }
